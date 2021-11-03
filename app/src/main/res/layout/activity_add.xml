@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:elevation="8dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scores Here"
+                    android:id="@+id/score_tv"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/custom_poppins"/>
+                <LinearLayout
+                    android:id="@+id/tab_section"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/score_tv"
+                    android:background="#fafafa">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:id="@+id/tab_layout"
+                                android:background="#ffa000">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Prelim"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/custom_poppins"
+                                    android:textColor="@color/white"/>
+
+
+                            </LinearLayout>
+
+
+                                <HorizontalScrollView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent">
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#d32f2f"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#e57373"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Activities"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#ef534f"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Assignment"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#e53935"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Quizes"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#d32f2f"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Exams/Laboratory"/>
+
+
+                                        </TableRow>
+
+                                        <!-- edittext row1-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_act1"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_ass1"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_q1"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_el1"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row2-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_act2"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_ass2"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_q2"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_el2"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row3-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_act3"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_ass3"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_q3"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_el3"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row4-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_act4"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_ass4"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_q4"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_el4"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row5-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_act5"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_ass5"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_q5"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/p_el5"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+
+
+
+
+                                    </TableLayout>
+
+
+
+                                </HorizontalScrollView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:background="#ffa000">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Midterm"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/custom_poppins"
+                                    android:textColor="@color/white"/>
+                            </LinearLayout>
+
+                                <HorizontalScrollView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent">
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#d32f2f"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#e57373"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Activities"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#ef534f"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Assignment"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#e53935"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Quizes"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:background="#d32f2f"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:textSize="16sp"
+                                                android:text="Exams/Laboratory"/>
+
+
+                                        </TableRow>
+
+                                        <!-- edittext row1-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_act1"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_ass1"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_q1"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_el1"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row2-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_act2"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_ass2"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_q2"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_el2"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row3-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_act3"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_ass3"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_q3"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_el3"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row4-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_act4"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_ass4"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_q4"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_el4"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+                                        <!-- edittext row5-->
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#bdbdbd"/>
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#f5f5f5"
+                                            android:textDirection="ltr"
+                                            android:gravity="center">
+
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_act5"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_ass5"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_q5"
+                                                android:textSize="16sp" />
+                                            <EditText
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/custom_poppins"
+                                                android:padding="5dp"
+                                                android:id="@+id/m_el5"
+                                                android:textSize="16sp" />
+
+                                        </TableRow>
+
+
+
+                                    </TableLayout>
+
+
+                                </HorizontalScrollView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:background="#ffa000">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Finals"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/custom_poppins"
+                                    android:textColor="@color/white"/>
+                            </LinearLayout>
+
+
+                                <HorizontalScrollView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent">
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+
+                                 <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#d32f2f"
+                                    android:textDirection="ltr"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:background="#e57373"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"
+                                        android:text="Activities"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:background="#ef534f"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"
+                                        android:text="Assignment"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:background="#e53935"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"
+                                        android:text="Quizes"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:background="#d32f2f"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"
+                                        android:text="Exams/Laboratory"/>
+
+
+                                </TableRow>
+
+                                <!-- edittext row1-->
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f5f5f5"
+                                    android:textDirection="ltr"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_act1"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_ass1"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_q1"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_el1"
+                                        android:textSize="16sp" />
+
+                                </TableRow>
+                                <!-- edittext row2-->
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#bdbdbd"/>
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f5f5f5"
+                                    android:textDirection="ltr"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_act2"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_ass2"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_q2"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_el2"
+                                        android:textSize="16sp" />
+
+                                </TableRow>
+                                <!-- edittext row3-->
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#bdbdbd"/>
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f5f5f5"
+                                    android:textDirection="ltr"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_act3"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_ass3"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_q3"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_el3"
+                                        android:textSize="16sp" />
+
+                                </TableRow>
+                                <!-- edittext row4-->
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#bdbdbd"/>
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f5f5f5"
+                                    android:textDirection="ltr"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_act4"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_ass4"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_q4"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_el4"
+                                        android:textSize="16sp" />
+
+                                </TableRow>
+                                <!-- edittext row5-->
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#bdbdbd"/>
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f5f5f5"
+                                    android:textDirection="ltr"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_act5"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_ass5"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_q5"
+                                        android:textSize="16sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/custom_poppins"
+                                        android:padding="5dp"
+                                        android:id="@+id/f_el5"
+                                        android:textSize="16sp" />
+
+                                </TableRow>
+
+                                    </TableLayout>
+
+
+                                </HorizontalScrollView>
+
+
+
+                        </LinearLayout>
+
+
+                    </ScrollView>
+
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/tab_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="right">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cancel_btn_tab"
+                        android:text="Cancel"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/save_btn_tab"
+                        android:layout_toRightOf="@+id/cancel_btn_tab"
+                        android:text="Save"/>
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

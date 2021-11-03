@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#ef534f"
+            android:id="@+id/indicator_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/class_clck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student Name:"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/student_name_display"
+                        android:text="Sherwin Comesario"
+                        android:textSize="20sp"
+                        android:textColor="#757575"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_message"
+                            android:background="@null"
+                            android:id="@+id/message_btn"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student ID:"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/student_id_display"
+                        android:text="20190858"
+                        android:textSize="20sp"
+                        android:textColor="#757575"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. of scores:"
+                    android:textSize="12sp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/actCountTv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="0"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@+id/actCountTv"
+                    android:id="@+id/actCount"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@+id/actCount"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true">
+
+                    <Button
+                        android:id="@+id/remove_student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        app:backgroundTint="@null"
+                        android:background="#ef534f"
+                        android:fontFamily="@font/custom_poppins"
+                        android:textStyle="bold"
+                        android:text="Remove \nStudent"
+                        android:drawableLeft="@drawable/ic_trash"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/remove_student"
+                        android:textSize="8sp"
+                        android:id="@+id/edit_scores"
+                        app:backgroundTint="@null"
+                        android:background="#ffab00"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/custom_poppins"
+                        android:textStyle="bold"
+                        android:text="Edit \nScores"
+                        android:drawableLeft="@drawable/ic_edit"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

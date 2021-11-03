@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Records</string>
+    <string name="about_content" tools:ignore="StringEscaping">
+        This app is created to serve as an assistant or to serve as an back-up app for teachers.
+        Using the traditional way of listing the score records of students seems outdated and hassle
+        since you have to carry some papers. Using our app, you can keep track of your student\'s records
+        easily. Using the android phone you have, you can have the records of the students wherever you
+        are.\n\n
+
+        Developers\n
+        Sherwin King Comesario\n
+        Acer Christian Santiago\n
+        Allyson Hilarion\n
+        Cinderella Mendoza
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

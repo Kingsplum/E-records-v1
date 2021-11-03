@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#ef534f"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/class_clck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject code:"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/subject_code_display"
+                        android:text="C123-C125"
+                        android:textSize="20sp"
+                        android:textColor="#757575"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject Name:"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/subject_name_display"
+                        android:text="App development"
+                        android:textSize="20sp"
+                        android:textColor="#757575"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/remove_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    app:backgroundTint="@null"
+                    android:background="#ef534f"
+                    android:fontFamily="@font/custom_poppins"
+                    android:textStyle="bold"
+                    android:text="Remove \nClass"
+                    android:drawableLeft="@drawable/ic_trash"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/view_class"
+                    app:backgroundTint="@null"
+                    android:background="#00c853"
+                    android:layout_toRightOf="@+id/remove_class"
+                    android:fontFamily="@font/custom_poppins"
+                    android:textStyle="bold"
+                    android:textSize="8sp"
+                    android:text="View \nClass"
+                    tools:ignore="InvalidId"
+                    android:drawableLeft="@drawable/ic_view"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/view_class"
+                    android:textSize="8sp"
+                    android:id="@+id/edit_class"
+                    app:backgroundTint="@null"
+                    android:background="#ffab00"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/custom_poppins"
+                    android:textStyle="bold"
+                    android:text="Edit \nClass"
+                    android:drawableLeft="@drawable/ic_edit"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

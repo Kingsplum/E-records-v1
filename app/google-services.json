@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042248835779",
+    "project_id": "records-ed729",
+    "storage_bucket": "records-ed729.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042248835779:android:440f7a03f5d5446e6d3876",
+        "android_client_info": {
+          "package_name": "cite.app.records"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042248835779-8udd9vn11r89t261ogkf2kirhs2864v4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdflkc6PW0DnVukPRp04fcc9jTC9JR7Os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042248835779-8udd9vn11r89t261ogkf2kirhs2864v4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_bg_thin_v2"
+        android:id="@+id/subject_img_container">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_subject"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/red_rounded_bg"
+            android:paddingRight="15dp"
+            android:paddingLeft="10dp"
+            android:text="Edit Subject Name"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/subject_img_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_thin"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/code_tv_container"
+            android:padding="5dp"
+            android:background="#00c853">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/custom_poppins"
+                android:textStyle="bold"
+                android:text="Subject Code:"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#757575"
+                android:textSize="16sp"
+                android:text="You cant edit this"
+                android:textColor="@color/black"
+                android:id="@+id/subject_code_display"
+                android:background="@color/white"
+                android:fontFamily="@font/custom_poppins"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject Name here"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:layout_below="@+id/code_tv_container"
+            android:id="@+id/subject_name_display"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/custom_poppins"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/subject_name_display"
+            android:padding="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_btn"
+                android:background="@drawable/btn_bg_thin"
+                android:textColor="#d32f2f"
+                android:textStyle="bold"
+                android:fontFamily="@font/custom_poppins"
+                app:backgroundTint="@null"
+                android:text="Cancel" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/save_btn"
+                android:background="@drawable/btn_bg_thin"
+                app:backgroundTint="@null"
+                android:textColor="#00c853"
+                android:fontFamily="@font/custom_poppins"
+                android:textStyle="bold"
+                android:text="Save"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
